@@ -9,15 +9,13 @@ import SwiftUI
 
 struct CustomerListScreen: View {
     
-    @StateObject var customerListVM = CustomerListViewModel()
-    
     var body: some View {
-        List(customerListVM.customers, id: \.firstName) { customer in
-            Text(customer.firstName)
+        List(0...10, id: \.self) { index in
+            Text("Customer \(index)")
         }
         
         .onAppear(perform: {
-            customerListVM.getAllCustomers()
+            
         })
     }
 }
