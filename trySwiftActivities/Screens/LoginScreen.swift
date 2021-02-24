@@ -7,20 +7,27 @@
 
 import SwiftUI
 
+
 struct LoginScreen: View {
     
-    @State private var username: String = ""
-    @State private var password: String = ""
+    @StateObject private var loginVM = LoginViewModel()
     
     var body: some View {
         
         NavigationView {
             Form {
-                TextField("username", text: $username)
-                TextField("password", text: $password)
-                Button("Login") {
-                    // perform login 
+                TextField("username", text: $loginVM.username)
+                TextField("password", text: $loginVM.password)
+                HStack {
+                    Spacer()
+                    Button("Login") {
+                        // perform login
+                        loginVM.login() 
+                    }
+                   
+                    Spacer()
                 }
+                Text(loginVM.message)
             }
             .navigationTitle("Login")
         }

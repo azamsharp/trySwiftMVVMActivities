@@ -16,6 +16,7 @@
 		8D0D6F1E25C31A2000E01B43 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D6F1D25C31A2000E01B43 /* Customer.swift */; };
 		8D0D6F2225C31A3D00E01B43 /* CustomerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D6F2125C31A3D00E01B43 /* CustomerListViewModel.swift */; };
 		8D0D6F2625C31A5F00E01B43 /* CustomerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D6F2525C31A5F00E01B43 /* CustomerService.swift */; };
+		8DC8E96525C33CB9009F6AE5 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC8E96425C33CB9009F6AE5 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8D0D6F1D25C31A2000E01B43 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		8D0D6F2125C31A3D00E01B43 /* CustomerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListViewModel.swift; sourceTree = "<group>"; };
 		8D0D6F2525C31A5F00E01B43 /* CustomerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerService.swift; sourceTree = "<group>"; };
+		8DC8E96425C33CB9009F6AE5 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		8D0D6F0225C3192B00E01B43 /* trySwiftActivities */ = {
 			isa = PBXGroup;
 			children = (
+				8DC8E96225C33BFB009F6AE5 /* Views */,
 				8D0D6F2425C31A5100E01B43 /* Services */,
 				8D0D6F1C25C31A1300E01B43 /* View Models */,
 				8D0D6F1B25C31A0E00E01B43 /* Models */,
@@ -104,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				8D0D6F2125C31A3D00E01B43 /* CustomerListViewModel.swift */,
+				8DC8E96425C33CB9009F6AE5 /* LoginViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -114,6 +118,13 @@
 				8D0D6F2525C31A5F00E01B43 /* CustomerService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		8DC8E96225C33BFB009F6AE5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +200,7 @@
 				8D0D6F2625C31A5F00E01B43 /* CustomerService.swift in Sources */,
 				8D0D6F1E25C31A2000E01B43 /* Customer.swift in Sources */,
 				8D0D6F2225C31A3D00E01B43 /* CustomerListViewModel.swift in Sources */,
+				8DC8E96525C33CB9009F6AE5 /* LoginViewModel.swift in Sources */,
 				8D0D6F1925C31A0A00E01B43 /* CustomerListScreen.swift in Sources */,
 				8D0D6F0425C3192B00E01B43 /* trySwiftActivitiesApp.swift in Sources */,
 				8D0D6F1525C3197F00E01B43 /* LoginScreen.swift in Sources */,

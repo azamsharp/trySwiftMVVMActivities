@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct CustomerListScreen: View {
+    
+    @StateObject var customerListVM = CustomerListViewModel()
+    
     var body: some View {
-        Text("Show List of Customers")
+        List(customerListVM.customers, id: \.firstName) { customer in
+            Text(customer.firstName)
+        }
+        
+        .onAppear(perform: {
+            customerListVM.getAllCustomers()
+        })
     }
 }
 
